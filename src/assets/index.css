@@ -1,0 +1,206 @@
+body{margin:0;  font-weight: 400;overflow-x: hidden;
+    /*padding: 0 calc(20px - (100vw - 100%)) 0 0;*/
+    /*margin-right: calc(-1 * (100vw - 100%));*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"!important;}
+a{text-decoration: none}
+.backtop{height: 100%;width: 100%;background-color: pink;text-align: center;line-height: 40px;color: rgb(243, 243, 247);box-shadow: 0 0 6px rgba(0, 0, 0, 0.12);}
+.el-button{margin:0!important;}
+.view-box{cursor: pointer;}
+input{width: 206px;}
+.block_buy{margin: 8px 0;display: flex;justify-content: space-between;align-items: center;}
+.button {border: none;font-weight: 500;font-family: Dodo, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";}
+.description{width: 100%;font-size: 14px;line-height: 20px;color: rgb(92, 99, 112);margin: 0;}
+.name{margin: 8px 0px;color: rgb(0, 0, 0);font-size: 20px;line-height: 24px;}
+.image {display: block;height: auto;max-width: 320px;}
+
+.my-ul{text-align: center;padding-inline-start: 0;}
+.my-li{max-width: 320px;display: inline-block;margin: 10px;
+    -webkit-box-shadow: 1px 5px 48px -5px rgba(80, 34, 79, 0.43);
+    -moz-box-shadow: 1px 5px 48px -5px rgba(80, 34, 79, 0.43);
+    box-shadow: 1px 5px 48px -5px rgba(80, 34, 79, 0.43);
+    transition: all 0.8s ease;
+}
+.my-li:hover{cursor: pointer;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.card{box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);border:1px solid #e4e7ed;overflow: hidden;background-color: #ffffff}
+
+
+/*.flowers-enter-active {opacity: 0;transform: translateX(130px);}*/
+/*.flowers-move{transition: transform 0.8s ease;}*/
+
+.flowers-enter-active,.flowers-leave-active {transition: all 0.4s ease;}
+.flowers-enter-from,.flowers-leave-to {opacity: 0;position: absolute}
+
+/*.flowers-leave-active {opacity: 0;transform: translateY(130px)}*/
+/*.flowers-enter-active {opacity: 0;transform: translateY(-130px)}*/
+/*.flowers-move{transition: transform 2s ease;}*/
+
+/*.flowers-enter-from, .flowers-leave-to {opacity: 0;transform: translateY(30px);}*/
+/*.flowers-leave-active {margin: 0 auto}*/
+
+/*.flowers-enter-active {*/
+/*    animation: bounce-in 0.5s;*/
+/*}*/
+/*.flowers-leave-active {*/
+/*    animation: bounce-in 0.5s reverse;*/
+/*}*/
+
+/*@keyframes bounce-in {*/
+/*    0% {*/
+/*        transform: scale(0);*/
+/*        opacity: 0;*/
+/*    }*/
+/*    50% {*/
+/*        transform: scale(0);*/
+/*    }*/
+/*    100% {*/
+/*        transform: scale(0);*/
+/*    }*/
+/*}*/
+
+.dialog-enter-active,.dialog-leave-active {transition: opacity 300ms ease-out;}
+.dialog-enter-from,.dialog-leave-to {opacity: 0;}
+
+
+.menu-enter-active,.menu-leave-active {transition: transform 300ms cubic-bezier(0.5, 1, 0.5, 1);}
+.menu-enter-from,.menu-leave-to{transform: translateX(-160px)}
+
+
+.basket-enter-active,.basket-leave-active {transition: transform 300ms cubic-bezier(0.5, 1, 0.5, 1);}
+.basket-enter-from,.basket-leave-to{opacity: 0}
+
+
+.filter-enter-active,.filter-leave-active {transition: all 300ms ease-out;}
+.filter-enter-from,.filter-leave-to {opacity: 0}
+
+/*.filter{transition: opacity 300ms ease-in-out}*/
+/*.filter.active{opacity:0}*/
+/*.filter{animation: 300ms show ease-out}*/
+/*@keyframes show{from{opacity:0}to{opacity:1}}*/
+
+button svg{height: 20px;width: 20px;}
+button {min-width: 0!important;}
+.find_block button{margin: auto 10px;}
+.user{margin: auto 10px;}
+.user button{margin: 0}
+.menu button{margin: 0}
+
+.filter-items{margin: auto 10px!important;}
+.filter-items-dialog{margin:5px!important;}
+.my-filter{border:none!important;box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);}
+.p-dropdown:not(.p-disabled).p-focus {box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12)!important;}
+
+/*.p-scrolltop{right:calc(40px - (100vw - 100%))!important}*/
+/*.p-scrolltop{right:25px!important;}*/
+
+.p-scrolltop .p-scrolltop-icon {color: #673AB7!important;}
+.p-scrolltop.p-link {background: white!important;z-index: 100!important;}
+
+.container_of_find_block{box-shadow: rgba(6, 5, 50, 0.1) 0 4px 30px;background-color: white;position: sticky;top: 0;width: 100%;z-index: 100}
+.find_block{max-width: 1200px;display: flex;position: relative;align-items: center;height: 50px;margin: 0 auto}
+
+.dialog{top: 0;bottom: 0;right: 0;left: 0;background: rgba(0,0,0,0.5);position: fixed;display: flex;z-index: 200;}
+.dialog-content{margin: auto;background: rgb(243, 243, 247);border-radius: 12px;min-height: 50px;max-height: 700px;min-width: 200px;padding: 10px;position: relative;}
+.dialog-footer{display: flex;justify-content: space-between;}
+
+.close-dialog {position:absolute;top: -30px;right: 30px;cursor: pointer;transition: transform 0.1s ease-in-out 0s;}
+.close-dialog:hover {transform: scale(1.11);}
+
+
+
+.dialog::-webkit-scrollbar{width: 0;}
+
+.basket {position: fixed;top: 0;bottom: 0;right: 0;width: 360px;background: rgb(243, 243, 247);z-index: 200;}
+
+.close-basket {cursor: pointer;position: absolute;width: 25px;height: 25px;top: calc(50% - 12px);left: -35px;transition: transform 500ms ease 0s;}
+.close-basket:hover{transform: rotate(180deg);}
+
+
+
+.menu {display: flex;position: fixed;top: 0;bottom: 0;left: 0;width: 160px;background: rgb(243, 243, 247);z-index: 200;flex-direction: column}
+
+
+
+.close-menu {cursor: pointer;position: absolute;width: 25px;height: 25px;top: calc(50% - 12px);left: 170px;transition: transform 500ms ease 0s;}
+.close-menu:hover{transform: rotate(-180deg);}
+
+.filter-container{text-align:center;top:100%;left:0;position:absolute;background:#ffffff;border:0 none;width:100%;box-shadow: 0 2px 4px -1px rgb(0 0 0 / 20%), 0 4px 5px 0 rgb(0 0 0 / 14%), 0 1px 10px 0 rgb(0 0 0 / 12%)}
+
+@media screen and (max-width: 800px) {  .collapse-700 {display: none!important}  }
+@media screen and (max-width: 1000px) {  .collapse-1000 {display: none!important}  }
+@media screen and (min-width: 700px) {  .burger-700 {display: none!important}  }
+@media screen and (min-width: 1000px) {  .burger-1000 {display: none!important}  }
+@media screen and (max-width: 992px) {  .md {text-align: center;justify-content: center;width: 100%;}  }
+
+.basket-footer{height: 50px;box-shadow: rgba(6, 5, 50, 0.1) 0 4px 30px;background-color: white;position: fixed;bottom: 0;width: 360px;z-index: 300;}
+.basket-header{font-weight: 500;text-align: center;}
+.field{margin-right: 10px;}
+.ml10{margin-left: 10px}
+.navbar{box-shadow: rgba(6, 5, 50, 0.1) 0 4px 30px;background-color: white;width: 100%;}
+/*.field2{margin-bottom: 20px;margin-top: 20px}*/
+.field2{margin: 20px}
+.p-input-icon-right{position: relative!important;display: block!important;}
+.product-image {width: 100px;cursor:pointer;box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)}
+.order-badge {border-radius: 2px;padding: .25em .5rem;text-transform: uppercase;font-weight: 700;font-size: 12px;letter-spacing: .3px;}
+
+.новый {background: #feedaf;color: #8a5340;}
+.оплачен{background: #c8e6c9;color: #256029;}
+.не оплачен{background: #ffcdd2;color: #c63737;}
+.завершен{background: #c8e6c9;color: #256029;}
+.собран{background: #c8e6c9;color: #256029;}
+.в пути{background: #eccfff;color: #694382;}
+.возврат{background: #eccfff;color: #694382;}
+.нереализован{background: #ffcdd2;color: #c63737;}
+.доставлен{background: #c8e6c9;color: #256029;}
+
+.pi-eye{cursor: pointer}
+.pi-eye-slash{cursor: pointer}
+.p-datatable .p-datatable-header {padding: 0!important;}
+
+.my-flex{flex-wrap: wrap;justify-content: center;text-align: center}
+.c12{flex:0 0 auto;width: 100%}
+
+.p-component{font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"!important;}
+.c2{font-size: 36px;margin:10px 0}
+.c3{margin: 10px 0}
+.c4{display: flex;flex-wrap: wrap;color: rgb(92, 99, 112);margin-top:3px}
+.c5{font-weight: 600;}
+.c6{padding: 20px;border: 1px solid #eaeaea;}
+.c7{display: flex;justify-content: space-between;align-items: center}
+.c8{margin-left: 10px;color: rgb(92, 99, 112)}
+.c9{display: flex; margin: 10px 0}
+.c10{font-size: 18px}
+
+.z-index-0 .p-datatable-thead{z-index: 0!important;}
+
+.contacts{padding: 20px}
+.contacts_text{color:deeppink}
+.contacts_title{color:black}
+
+.p-speeddial-button.p-button.p-button-icon-only{
+    background-color: white!important;
+}
+.speeddial-fixed{
+    width: 2.75rem!important;
+    height: 2.75rem!important;
+}
+.speeddial-navbar{
+    width: 2.25rem!important;
+    height: 2.25rem!important;
+}
+.p-speeddial-action{
+    background: white!important;
+    color: #673AB7!important;
+    box-shadow: 0 3px 1px -2px rgb(0 0 0 / 20%), 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+.p-speeddial-button.p-button.p-button-icon-only .p-button-icon {
+    font-size: 1.15rem!important;
+}
+
+.p-float-label > .p-invalid + label {
+    color: rgba(0, 0, 0, 0.6)!important;
+}
+
