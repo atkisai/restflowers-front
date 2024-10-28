@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "cross-env NODE_OPTIONS=--openssl-legacy-provider vue-cli-service serve",
     "build": "vue-cli-service build"
   },
   "dependencies": {
@@ -36,6 +36,7 @@
     "@vue/cli-plugin-vuex": "~4.5.15",
     "@vue/cli-service": "~4.5.15",
     "@vue/compiler-sfc": "^3.0.0",
+    "cross-env": "^7.0.3",
     "node-sass": "^7.0.1",
     "sass-loader": "^10.3.1",
     "webpack": "^4.46.0"

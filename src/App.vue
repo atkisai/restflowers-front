@@ -23,10 +23,11 @@ export default {
   },
   mounted() {
     if(localStorage.download===undefined){localStorage.download='30'}
-    localStorage.api='http://127.0.0.1:8000/'
-    localStorage.api_ws='ws://127.0.0.1:8000/api/'
+    // localStorage.api='http://127.0.0.1:8000/'
+    // localStorage.api_ws='ws://127.0.0.1:8000/api/'
     // localStorage.api='https://restflowers.com/'
     // localStorage.api_ws='wss://restflowers.com/api/'
+
 
     this.themeChangeListener = (event) => {
       const elementId = 'theme-link';

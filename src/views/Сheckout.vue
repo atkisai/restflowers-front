@@ -73,8 +73,8 @@
         <li v-for="(fl, index) in basket" :key="index" class="my-li" style="max-width: 220px">
           <div class="card">
             <photo-provider class="cardImages">
-              <photo-consumer v-for="(src,index) in fl.images" :key="api+src.image" :src="api+src.image" style="display: block">
-                <img v-if="index==0" :src="api+src.image" class="image" style="max-width: 220px"/>
+              <photo-consumer v-for="(src,index) in fl.images" :key="api+src.image" :src="src.image" style="display: block">
+                <img v-if="index==0" :src="src.image" class="image" style="max-width: 220px"/>
               </photo-consumer>
             </photo-provider>
             <div style="padding: 14px">
